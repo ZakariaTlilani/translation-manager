@@ -44,7 +44,7 @@ class ListLanguageLines extends ListRecords
                                     collect(\ZakariaTlilani\TranslationManager\TranslationManagerPlugin::get()->getAvailableLocales())
                                         ->pluck('name', 'code')
                                         ->toArray()
-                                )->label('translation-manager::translations.Language')
+                                )->label('translation-manager::translations.translation-language')
                                 ->required(),
 
                             Textarea::make('text'),
