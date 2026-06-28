@@ -1,0 +1,43 @@
+{
+  "name": "zakariatlilani/translation-manager",
+  "description": "Manage your application's translation in Filament.",
+  "keywords": [
+    "zakariatlilani",
+    "laravel",
+    "filament",
+    "localization",
+    "translation",
+    "translation-manager",
+    "translation-manager-for-filament"
+  ],
+  "homepage": "https://github.com/zakariatlilani/translation-manager",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "zakariatlilani\\TranslationManager\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "filament/filament": "^4.0 || ^5.0",
+    "filament/notifications": "^4.0 || ^5.0",
+    "spatie/laravel-package-tools": "^1.92",
+    "spatie/laravel-translation-loader": "^2.8",
+    "stijnvanouplines/blade-country-flags": "^1.0.6"
+  },
+  "require-dev": {
+    "tightenco/duster": "^2.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "zakariatlilani\\TranslationManager\\TranslationManagerProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
